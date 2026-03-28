@@ -167,7 +167,7 @@ export default function AboutPage() {
           <ul className="space-y-3 text-sm" style={{ color: "#9CA3AF" }}>
             <li>📧 Email — <span style={{ color: "#4B5563" }}>추후 입력</span></li>
             <li>💼 LinkedIn — <span style={{ color: "#4B5563" }}>추후 입력</span></li>
-            <li>📝 Naver Blog — <span style={{ color: "#4B5563" }}>Leo's F&B Insight (추후 입력)</span></li>
+            <li>📝 Naver Blog — <span style={{ color: "#4B5563" }}>Leo&apos;s F&B Insight (추후 입력)</span></li>
           </ul>
         </div>
 
