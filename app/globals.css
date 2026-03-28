@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0A0A0A;
+  --foreground: #F5F5F5;
+  --accent: #10B981;
+  --subtext: #9CA3AF;
+  --card-bg: #141414;
+  --border: #1F1F1F;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Noto Sans KR', 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@layer utilities {
+  .text-accent {
+    color: var(--accent);
+  }
+  .text-subtext {
+    color: var(--subtext);
+  }
+  .bg-card {
+    background-color: var(--card-bg);
+  }
+  .border-subtle {
+    border-color: var(--border);
+  }
+}
+
+/* 리포트 본문 마크다운 스타일 */
+.report-body {
+  color: #D1D5DB;
+  line-height: 1.85;
+  font-size: 0.95rem;
+}
+.report-body h2 {
+  color: #F5F5F5;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1F1F1F;
+}
+.report-body h3 {
+  color: #E5E7EB;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.report-body h4 {
+  color: #9CA3AF;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.report-body p {
+  margin-bottom: 1rem;
+}
+.report-body strong {
+  color: #F5F5F5;
+  font-weight: 600;
+}
+.report-body ul,
+.report-body ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.report-body li {
+  margin-bottom: 0.35rem;
+}
+.report-body blockquote {
+  border-left: 3px solid #10B981;
+  padding: 0.75rem 1.25rem;
+  margin: 1.5rem 0;
+  background-color: #0D1F17;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #6EE7B7;
+}
+.report-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+}
+.report-body th {
+  background-color: #141414;
+  color: #F5F5F5;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border: 1px solid #1F1F1F;
+  text-align: left;
+}
+.report-body td {
+  padding: 0.6rem 1rem;
+  border: 1px solid #1F1F1F;
+  color: #9CA3AF;
+}
+.report-body tr:hover td {
+  background-color: #141414;
+}
+.report-body code {
+  background-color: #141414;
+  color: #10B981;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+}
+.report-body pre {
+  background-color: #141414;
+  border: 1px solid #1F1F1F;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+.report-body pre code {
+  background: none;
+  padding: 0;
+  color: #D1D5DB;
+}
