@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { analysisData, categoryColors } from "@/content/analysisData";
-import { SITE_NAME_PRIMARY, SITE_NAME_ACCENT } from "@/lib/constants";
 
 export default function HomePage() {
   return (
@@ -13,14 +12,11 @@ export default function HomePage() {
             FOOD SERVICE STRATEGY
           </p>
           <h1
-            className="text-4xl md:text-5xl font-bold leading-tight mb-3"
+            className="text-4xl md:text-5xl font-bold leading-tight mb-5"
             style={{ color: "#F5F5F5", fontFamily: "'Noto Sans KR', sans-serif" }}
           >
-            {SITE_NAME_PRIMARY} <span style={{ color: "#10B981" }}>{SITE_NAME_ACCENT}</span>
+            외식 브랜드 분석 아카이브
           </h1>
-          <p className="text-lg md:text-xl font-medium mb-3" style={{ color: "#D1D5DB" }}>
-            외식업 브랜드 분석 아카이브
-          </p>
           <p className="text-sm md:text-base mb-10" style={{ color: "#9CA3AF" }}>
             현장 경험 기반의 외식업 인사이트 리포트
           </p>
