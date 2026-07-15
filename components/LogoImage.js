@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import { SITE_NAME, SITE_NAME_PRIMARY, SITE_NAME_ACCENT } from "@/lib/constants";
 
 export default function LogoImage() {
   const [imgFailed, setImgFailed] = useState(false);
@@ -14,7 +15,7 @@ export default function LogoImage() {
       {!imgFailed ? (
         <img
           src="/images/covers/logo.png"
-          alt="Leo Insight 로고"
+          alt={`${SITE_NAME} 로고`}
           className="w-48 h-48 object-contain"
           onError={() => setImgFailed(true)}
         />
@@ -28,7 +29,7 @@ export default function LogoImage() {
               fontWeight: 700,
             }}
           >
-            Leo
+            {SITE_NAME_PRIMARY}
           </p>
           <p
             className="text-5xl md:text-6xl leading-tight"
@@ -39,7 +40,7 @@ export default function LogoImage() {
               fontStyle: "italic",
             }}
           >
-            insight
+            {SITE_NAME_ACCENT.toLowerCase()}
           </p>
         </div>
       )}

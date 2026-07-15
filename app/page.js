@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { analysisData, categoryColors } from "@/content/analysisData";
+import { SITE_NAME_PRIMARY, SITE_NAME_ACCENT } from "@/lib/constants";
 
 export default function HomePage() {
   return (
@@ -12,13 +13,16 @@ export default function HomePage() {
             FOOD SERVICE STRATEGY
           </p>
           <h1
-            className="text-4xl md:text-5xl font-bold leading-tight mb-5"
+            className="text-4xl md:text-5xl font-bold leading-tight mb-3"
             style={{ color: "#F5F5F5", fontFamily: "'Noto Sans KR', sans-serif" }}
           >
-            외식업 브랜드 분석 아카이브
+            {SITE_NAME_PRIMARY} <span style={{ color: "#10B981" }}>{SITE_NAME_ACCENT}</span>
           </h1>
+          <p className="text-lg md:text-xl font-medium mb-3" style={{ color: "#D1D5DB" }}>
+            외식업 브랜드 분석 아카이브
+          </p>
           <p className="text-sm md:text-base mb-10" style={{ color: "#9CA3AF" }}>
-            8년 현장 경험 기반의 외식업 인사이트 리포트
+            현장 경험 기반의 외식업 인사이트 리포트
           </p>
           <div className="flex gap-4 flex-wrap">
             <Link
@@ -105,31 +109,6 @@ export default function HomePage() {
               </Link>
             );
           })}
-        </div>
-      </section>
-
-      {/* Key Numbers */}
-      <section className="max-w-5xl mx-auto w-full px-6 pb-24">
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            { icon: "🏢", label: "F&B 본사 경력", value: "8년" },
-            { icon: "📊", label: "분석 프레임워크", value: "6단계" },
-            { icon: "📋", label: "PMP · ADSP", value: "준비 중" },
-          ].map((item) => (
-            <div
-              key={item.label}
-              className="p-6 rounded-xl border"
-              style={{ backgroundColor: "#141414", borderColor: "#1F1F1F" }}
-            >
-              <span className="text-2xl mb-3 block">{item.icon}</span>
-              <p className="text-xs mb-1" style={{ color: "#9CA3AF" }}>
-                {item.label}
-              </p>
-              <p className="text-2xl font-bold" style={{ color: "#10B981" }}>
-                {item.value}
-              </p>
-            </div>
-          ))}
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SITE_NAME_PRIMARY, SITE_NAME_ACCENT } from "@/lib/constants";
 
 export default function Navbar() {
   return (
@@ -11,7 +12,7 @@ export default function Navbar() {
     >
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="text-lg font-semibold" style={{ color: "#F5F5F5", fontFamily: "'Inter', 'Noto Sans KR', sans-serif" }}>
-          Leo <span style={{ color: "#10B981" }}>Insight</span>
+          {SITE_NAME_PRIMARY} <span style={{ color: "#10B981" }}>{SITE_NAME_ACCENT}</span>
         </Link>
         <ul className="flex gap-8 text-sm" style={{ color: "#9CA3AF" }}>
           <li>

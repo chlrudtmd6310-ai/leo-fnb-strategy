@@ -1,8 +1,9 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { SITE_NAME } from "@/lib/constants";
 
 export const metadata = {
-  title: "Leo F&B Strategy",
+  title: SITE_NAME,
   description: "F&B 전략 분석 및 인사이트",
 };
 
